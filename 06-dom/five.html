@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThE DOM</title>
+</head>
+<body style="background-color: #212121; color:white;">
+    <p>
+        This is just a try to learn to make function using Javascript dom to add new element in list
+    </p>
+
+    <ul class="language">
+        <li>Lorem.</li>
+        <li>Deserunt.</li>
+    </ul>
+
+    <script>
+        function addList(language){
+            const li =document.createElement('li');
+            li.innerHTML = `<li>${language}</li>`;
+            document.querySelector('.language').appendChild(li);
+        }
+       
+        fun = (l) => {
+            const li = document.createElement('li');
+            li.innerHTML = `${l}`;
+            document.querySelector('.language').appendChild(li)
+        }
+        fun('li')
+        fun('not so funk abishek')
+    </script>
+</body>
+</html>

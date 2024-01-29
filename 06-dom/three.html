@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM part 3</title>
+</head>
+<body style="background-color: 212121; color:white;">
+    
+
+
+    <script>
+    //   const img = document.createElement('img');
+    //   const source = img.setAttribute('src','https://images.app.goo.gl/umJR5coe3XHdzZU27');
+    //   img.appendChild(source);
+    //   console.log(source);
+    const img = document.createElement("img");
+    const url = (pic) => {
+        img.src = `${pic}`;
+        img.style.borderRadius = '50px';
+        img.style.height = '200px'
+        img.style.width = '200px'
+        document.body.appendChild(img);
+    }
+    url('C:\Users\Dell\Downloads\hu-chen-FZ0qzjVF_-c-unsplash.jpg')
+    const button = document.createElement('button');
+
+    const addButton = (btn) => {
+        button.innerHTML(`${btn}`);
+        document.body.appendChild(btn);
+    } 
+    addButton(hello);
+
+       
+
+
+
+    </script>
+</body>
+</html>
